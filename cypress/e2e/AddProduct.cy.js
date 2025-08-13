@@ -1,4 +1,4 @@
-describe('Cart', () => {
+describe('Add Product', () => {
 
   beforeEach(() => {
     cy.login(); // Reuse login logic before every test
