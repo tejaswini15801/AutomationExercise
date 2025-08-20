@@ -83,8 +83,10 @@ Cypress.Commands.add('login', () => {
 
 //Search based command
 Cypress.Commands.add("addProductByName", (name) => {
-  cy.get("input[placeholder='Search']").type(name);
-  cy.get("button[type=submit]").click();
-  cy.contains(name).parents(".product-card").find("button.add-to-cart").click();
+  cy.get(".material-icons.card_travel").click();
+  cy.get(".form-control.input-lg").type(name);
+  //cy.get("input[placeholder='Search']").type(name);
+  cy.get(".btn.btn-default.btn-lg").click();
+  cy.get('.productinfo > .btn').click();
 });
 
